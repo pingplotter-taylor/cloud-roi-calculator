@@ -1,0 +1,44 @@
+
+<div class="row">
+    <div class="columns"><hr/><h1>PingPlotter Cloud ROI Calculator</h1></div>
+    </div>
+
+    <form action="/">
+        <div class="row">
+            <div class="four columns">
+                <label for="user_count">How many end users?</label>
+                <input class="u-full-width" type="text" id="user_count"
+                    value="{{inputs['user_count']}}">
+            </div>
+            <div class="four columns">
+                <label for="user_cost">Average hourly wage?</label>
+                <input class="u-full-width" type="text"
+                    id="user_cost" value="{{inputs['user_cost']}}">
+            </div>
+            <div class="four columns">
+                <label for="critical_services">Critical internet services?</label>
+                <input class="u-full-width" type="text"
+                    id="critical_services"
+                    value="{{inputs['critical_services']}}">
+            </div>
+        </div>
+        <div class="row">
+            <div class="four columns">
+                <label for="it_cost">Average hourly IT support cost?</label>
+                <input class="u-full-width" type="text"
+                    id="it_cost" value="{{inputs['it_cost']}}">
+            </div>
+            <div class="four columns">
+                <label for="frequency">AVG monthly incidents?</label>
+                <input class="u-full-width" type="text"
+                    id="frequency" value="{{inputs['frequency']}}">
+            </div>
+            <div class="four columns">
+                <label for="duration">AVG incident minutes?</label>
+                <input class="u-full-width" type="text"
+                    id="duration"
+                    value="{{inputs['frequency']}}">
+            </div>
+        </div>
+        <input class="button-primary" type="submit" value="Submit">
+    </form>
